@@ -158,6 +158,7 @@ function displayProducts(products) {
     div.classList.add("product")
 
     let productImage = document.createElement("img")
+    productImage.classList.add("prdimg");
     productImage.src = product.api_featured_image;
     div.appendChild(productImage);
     productDiv.appendChild(div);

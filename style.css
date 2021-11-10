@@ -95,12 +95,26 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.prdimg {
+width: 150px;
+height: auto;
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 2.5rem;     
-  background: rgb(173, 169, 245);     
+  background: rgb(173, 169, 245);  
 }
