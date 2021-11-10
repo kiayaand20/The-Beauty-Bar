@@ -12,81 +12,75 @@
   <title>The Beauty Bar</title>
 </head>
 
-<body>
+<body class="Site">
+  <div id="content-wrap">
+    <header class="header">
+      <h1>THE BEAUTY BAR</h1>
+    </header>
 
-  <nav>
-    <div class="navbar">
-      <a href="#contact">Contact</a>
-      <a href="#home">Home</a>
+    <nav>
+      <div class="navbar">
+        <h3 id="quote">“The most beautiful makeup for a woman is passion. But cosmetics are easier to buy.” <br> –
+          Yves
+          Saint Laurent
+        </h3>
+      </div>
+    </nav>
+
+
+    <section>
+      <div class="header_images">
+        <img src="https://cdn.pixabay.com/photo/2016/10/22/20/55/makeup-brushes-1761648__480.jpg" alt="makeup brushes"
+          id="makeup" style="width: 18%">
+        <img src="https://cdn.pixabay.com/photo/2020/05/24/07/24/paint-strokes-5212800__480.png" alt="sample colors"
+          id="colors" style="width: 15%">
+        <img src="https://cdn.pixabay.com/photo/2017/11/29/09/15/paint-2985569__340.jpg" alt="face" id="face"
+          style="width: 18%">
+      </div>
+    </section>
+
+    <div class="category">
+      <h2>CATEGORY</h2>
     </div>
-  </nav>
 
-  <header class="header">
-    <h1>THE BEAUTY BAR</h1>
-    <h3 id="quote">“The most beautiful makeup for a woman is passion. But cosmetics are easier to buy.” <br> – Yves
-      Saint Laurent
-    </h3>
-  </header>
+    <div class="dropdown">
+      <form>
+        <select id="brand-name">
+          <option value="Search by Brand" selected disable hidden>Brand</option>
+        </select>
+      </form>
 
+      <form>
+        <select id="price">
+          <option value="Search by Price" selected disable hidden>Price</option>
+          <option value="15">Less than $15</option>
+          <option value="25">Less than $25</option>
+          <option value="50">Less than $50</option>
+          <option value="100">Less than $100</option>
+        </select>
+      </form>
 
-  <section>
-    <div class="header_images">
-      <img src="https://cdn.pixabay.com/photo/2016/10/22/20/55/makeup-brushes-1761648__480.jpg" alt="maekup brushes"
-        style="width: 18%">
-      <img src="https://cdn.pixabay.com/photo/2020/05/24/07/24/paint-strokes-5212800__480.png" alt="sample colors"
-        style="width: 15%">
-      <img src="https://cdn.pixabay.com/photo/2017/11/29/09/15/paint-2985569__340.jpg" alt="face" style="width: 18%">
+      <form>
+        <select id="product-type">
+          <option value="Search by Product Type" selected disable hidden>Product Type</option>
+        </select>
+      </form>
+
+      <form>
+        <select id="tags">
+          <option value="Search by Tags" selected disable hidden>Ingredients Preference</option>
+        </select>
+      </form>
     </div>
-  </section>
 
-  <div class="category">
-    <h2>CATEGORY</h2>
+    <div id="product-name"></div>
   </div>
-
-  <div class="dropdown-list">
-    <form>
-      <select id="brand-name">
-        <option value="Search by Brand" selected disable hidden>Brand</option>
-      </select>
-    </form>
-
-    <form>
-      <select id="price">
-        <option value="Search by Price" selected disable hidden>Price</option>
-        <option value="20">Under $20</option>
-        <option value="21, 50">$20 to $50</option>
-        <option value="51">$50 and above</option>
-      </select>
-    </form>
-
-    <form>
-      <select id="product-type">
-        <option value="Search by Product Type" selected disable hidden>Product Type</option>
-      </select>
-    </form>
-
-    <form>
-      <select id="tags">
-        <option value="Search by Tags" selected disable hidden>Ingredients Preference</option>
-      </select>
-    </form>
-  </div>
-
-  <div id="product-name"></div>
-  <div id="product-image"></div>
-
 </body>
 
-<!-- <footer>
-  <div class="footer">
-    <div>
-      <h4 id="name-tag">2021 | Kiaya Anderson</h4>
-    </div>
-
-    <a href="http://github.com">
-      <img src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png" alt="GitHub"
-        id="icon" target="_blank"></a>
+<footer id="footer">
+  <div>
+    <h4 id="name-tag">2021 | Kiaya Anderson</h4>
   </div>
-</footer> -->
+</footer>
 
 </html>

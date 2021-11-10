@@ -82,7 +82,6 @@ const ingredientsList =
     "water free"]
 
 let productDiv = document.querySelector("#product-name")
-let imgDiv = document.querySelector("#product-image")
 
 async function searchBrandData(e) {
   productDiv.innerHTML = ""
@@ -112,7 +111,6 @@ function showBrandData() {
 showBrandData();
 
 async function searchPriceData(e) {
-  productDiv.innerHTML = ""
   let price = e.target.value;
   const url = `http://makeup-api.herokuapp.com/api/v1/products.json?price_less_than=${price}`;
   try {
@@ -158,25 +156,23 @@ function displayProducts(products) {
   products.forEach(product => {
     let div = document.createElement("div");
     div.classList.add("product")
-    let productName = document.createElement("h3")
+
+    let productImage = document.createElement("img")
+    productImage.src = product.api_featured_image;
+    div.appendChild(productImage);
+    productDiv.appendChild(div);
+    console.log(product.api_featured_image)
+
+    let productName = document.createElement("h4")
     productName.innerText = product.name;
     div.appendChild(productName);
     productDiv.appendChild(div);
     console.log(product.name);
 
-    let image = document.createElement("div");
-    image.classList.add("product")
-    let productImage = document.createElement("img")
-    productImage.src = product.api_featured_image;
-    imgDiv.appendChild(div);
-    image.appendChild(productImage);
-    console.log(product.api_featured_image)
+    let productPrice = document.createElement("h4")
+    productPrice.innerText = product.price;
+    div.appendChild(productPrice);
+    productDiv.appendChild(div);
+    console.log(product.price)
   })
 }
-
-// function parseBreed(link) {
-//   let link = product.api_featured_image
-//   link.split("//");
-//   // console.log(link);
-// }
-// parseBreed(link);
