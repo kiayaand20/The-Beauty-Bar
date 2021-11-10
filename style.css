@@ -1,0 +1,85 @@
+body {
+  background-color: white;
+}
+
+.header {
+  display: block; 
+  width: 100%; 
+  text-align: center;
+}
+
+#quote {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(173, 169, 245);
+}
+
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+.header_images {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.category {
+  display:block; 
+  width:100%; 
+  text-align:center;
+}
+
+.dropdown-list {
+  display:block; 
+  width:100%; 
+  text-align:center;
+}
+
+#brand-name {
+  font-weight: bold;
+}
+
+#price {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#product-type {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#tags {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  background: rgb(173, 169, 245);;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#icon {
+  width: 40px;
+  margin: auto;
+  padding-top: 30%;
+}
