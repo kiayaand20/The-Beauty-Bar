@@ -50,11 +50,31 @@
   color: white;
 }
 
+.descriptors {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#desc1 {
+  font-family: 'Pacifico';
+  font-weight: normal;
+}
+
+#desc2 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#desc3 {
+  font-family: 'Shadows Into Light', cursive;
+}
+
 .header_images {
   display: flex;
-  padding: 20px;
-  text-align: center;
   justify-content: space-around;
+  align-items: flex-start;
+  /* padding: 5px;
+  text-align: center;
+  justify-content: space-around; */
 }
 
 .category {
@@ -117,7 +137,7 @@ height: auto;
 .prdname {
 display: inline-block;
 text-align: center;
-margin-bottom: 0;
+margin-bottom: 0;;
 }
 
 .prdprice {
