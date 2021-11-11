@@ -10,26 +10,35 @@
 
 .header {
   display: block; 
+  margin: 0 auto;
   width: 100%; 
   text-align: center;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 20px;
+  font-size: 17px;
+  border-width: 3px;  
+  border-style: dotted solid;
 }
 
 #quote {
   font-weight: normal;
   font-style: italic;
   text-align: center;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 #makeup {
-  border: 50px solid rgb(226, 205, 250);
+  border: 30px solid rgb(226, 205, 250);
+  margin-left: 150px;
 }
 
 #colors {
-  border: 50px solid rgb(205, 250, 229);
+  border: 30px solid rgb(205, 250, 229);
 }
 
 #face {
-  border: 50px solid rgb(250, 250, 205);
+  border: 30px solid rgb(250, 250, 205);
+  margin-right: 150px;
 }
 
 .navbar {
@@ -52,29 +61,31 @@
 
 .descriptors {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 #desc1 {
-  font-family: 'Pacifico';
+  font-family: 'Pacifico', cursive;
   font-weight: normal;
+  margin-left: 50px;
+  border: 10px double rgb(226, 205, 250);
 }
 
 #desc2 {
   font-family: 'Permanent Marker', cursive;
+  border: 10px double rgb(205, 250, 229);
 }
 
 #desc3 {
   font-family: 'Shadows Into Light', cursive;
+  margin-right: 50px;
+  border: 10px double rgb(250, 250, 205);
 }
 
 .header_images {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  /* padding: 5px;
-  text-align: center;
-  justify-content: space-around; */
 }
 
 .category {
@@ -91,24 +102,28 @@
 
 #brand-name {
   font-weight: bold;
+  font-size: 15px;
 }
 
 #price {
   margin-top: 15px;
   font-weight: bold;
-  width: 175px;
+  width: 190px;
+  font-size: 15px;
 }
 
 #product-type {
   margin-top: 15px;
   font-weight: bold;
-  width: 175px;
+  width: 190px;
+  font-size: 15px;
 }
 
 #tags {
   margin-top: 15px;
   font-weight: bold;
-  width: 175px;
+  width: 190px;
+  font-size: 15px;
 }
 
 #product-name {
@@ -124,8 +139,8 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  margin-left: 28%;
-  margin-right: 28%;
+  margin-left: 35%;
+  margin-right: 35%;
   border: 4px dotted black;
 }
 
