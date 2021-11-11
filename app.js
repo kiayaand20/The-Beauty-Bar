@@ -1,61 +1,62 @@
 const brands = [
-  "almay",
-  "alva",
-  "anna sui",
-  "annabelle",
-  "benefit",
-  "boosh",
-  "burt's bees",
-  "butter london",
-  "c'est moi",
-  "cargo cosmetics",
-  "china glaze",
-  "clinique",
-  "coastal classic creation",
-  "colourpop",
-  "covergirl",
-  "dalish",
-  "tenth",
-  "dior",
-  "dr. haschka",
-  "elf",
-  "essie",
-  "fenty",
-  "glossier",
-  "green people",
-  "iman",
-  "l'oreal",
-  "bath cosmetics usa",
-  "maia's mineral galaxy",
-  "marcelle",
-  "marienatie",
-  "maybelline",
-  "milani",
-  "mineral fusion",
-  "misa",
-  "mistura",
-  "moov",
-  "naked",
-  "nyx",
-  "orly",
-  "peacemaking",
-  "penny wool organics",
-  "physicians formula",
-  "piggy paint",
-  "pure anada",
-  "help the minerals",
-  "revlon",
-  "sally b's skin yummies",
-  "salon perfect",
-  "sante",
-  "sinful colors",
-  "smashbox",
-  "sila",
-  "suncoat",
-  "w3llpeople",
-  "wet n wild",
-  "zorah",
-  "zorah biocosmetiques"]
+  "Almay",
+  "Alva",
+  "Anna sui",
+  "Annabelle",
+  "Benefit",
+  "Boosh",
+  "Burt's bees",
+  "Butter london",
+  "C'est moi",
+  "Cargo cosmetics",
+  "China glaze",
+  "Clinique",
+  "Coastal classic creation",
+  "Colourpop",
+  "Covergirl",
+  "Dalish",
+  "Tenth",
+  "Dior",
+  "Dr. haschka",
+  "Elf",
+  "Essie",
+  "Fenty",
+  "Glossier",
+  "Green people",
+  "Iman",
+  "L'oreal",
+  "Bath cosmetics usa",
+  "Maia's mineral galaxy",
+  "Marcelle",
+  "Marienatie",
+  "Maybelline",
+  "Milani",
+  "Mineral fusion",
+  "Misa",
+  "Mistura",
+  "Moov",
+  "Naked",
+  "Nyx",
+  "Orly",
+  "Peacemaking",
+  "Penny wool organics",
+  "Physicians formula",
+  "Piggy paint",
+  "Pure anada",
+  "Help the minerals",
+  "Revlon",
+  "Sally b's skin yummies",
+  "Salon perfect",
+  "Sante",
+  "Sinful colors",
+  "Smashbox",
+  "Sila",
+  "Suncoat",
+  "W3llpeople",
+  "Wet n wild",
+  "Zorah",
+  "Zorah biocosmetiques"]
+
 const ingredientsList =
   ["Canadian",
     "CertClean",
@@ -74,12 +75,13 @@ const ingredientsList =
     "Sugar Free",
     "USDA Organic",
     "Vegan",
-    "alcohol free",
-    "cruelty free",
-    "oil free",
-    "purpicks",
-    "silicone free",
-    "water free"]
+    "Alcohol free",
+    "Cruelty free",
+    "Oil free",
+    "Purpicks",
+    "Silicone free",
+    "Water-free"]
+
 // const productType = [
 //   "blush",
 //   "bronzer",
@@ -217,4 +219,20 @@ function displayProducts(products) {
     productDiv.appendChild(div);
     console.log(product.price)
   })
+}
+
+let topbutton = document.getElementById("topBtn");
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topbutton.style.display = "block";
+  } else {
+    topbutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
