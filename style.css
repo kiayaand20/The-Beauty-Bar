@@ -1,4 +1,4 @@
-.Site {
+.body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -15,120 +15,57 @@
   text-align: center;
   font-family: 'Playfair Display', serif;
   letter-spacing: 20px;
-  font-size: 17px;
+  font-size: 20px;
   border-width: 3px;  
   border-style: dotted solid;
 }
 
-#quote {
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  font-family: 'Cormorant Garamond', serif;
-}
-
-#brushes {
-  border: 20px solid rgb(234, 220, 250);
-  margin-left: 150px;
-}
-
-#palette {
-  border: 20px solid rgb(205, 250, 229);
-}
-
-#face {
-  border: 20px solid rgb(250, 250, 205);
-  margin-right: 150px;
-}
-
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: baseline;
   overflow: hidden;
   border: 10px;
   background-color: rgb(173, 169, 245);
+  height: 4rem; 
 }
-
-.navbar a {
-  text-align: center;
-  color: #f2f2f2;
-  padding: 14px 16px;
-  text-decoration: none;
+#category {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
   font-size: 20px;
 }
 
-.navbar a:hover {
-  background-color: #ddd;
-  color: white;
-}
-
-.descriptors {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-#desc1 {
-  font-family: 'Pacifico', cursive;
-  font-weight: normal;
-  margin-left: 50px;
-  border: 10px dashed rgb(234, 220, 250);
-}
-
-#desc2 {
-  font-family: 'Permanent Marker', cursive;
-  border: 10px double rgb(205, 250, 229);
-}
-
-#desc3 {
-  font-family: 'Shadows Into Light', cursive;
-  margin-right: 50px;
-  border: 10px dotted rgb(250, 250, 205);
-}
-
-.header_images {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-
-.category {
-  display:block; 
-  width:100%; 
-  text-align:center;
-}
-
-.dropdown {
-  display:block; 
-  width:100%; 
-  text-align:center;
-}
-
 #brand-name {
+  width: 190px;
   font-weight: bold;
   font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
 }
 
 #price {
-  margin-top: 15px;
-  font-weight: bold;
   width: 190px;
   font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-weight: bold;
 }
 
 #product-type {
-  margin-top: 15px;
   font-weight: bold;
   width: 190px;
   font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
 }
 
 #tags {
-  margin-top: 15px;
   font-weight: bold;
   width: 190px;
   font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-left: 10px;
 }
 
 #product-name {
@@ -136,6 +73,72 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+}
+
+.descriptors {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+#desc1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 17px;
+  border: 10px dashed rgb(234, 220, 250);
+  letter-spacing: 10px;
+}
+
+#desc2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  margin-top: 17px;
+  border: 10px double rgb(205, 250, 229);
+  letter-spacing: 10px; 
+}
+
+#desc3 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  margin-top: 17px;
+  border: 10px dotted rgb(250, 250, 205);
+  letter-spacing: 10px;
+}
+
+#desc4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin-top: 17px;
+  border: 10px solid rgb(240, 168, 152);
+}
+
+.header_images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+#brushes {
+  display: flex;
+  border: 20px solid rgb(234, 220, 250);
+}
+
+#palette {
+  display: flex;
+ border: 20px solid rgb(205, 250, 229); 
+}
+
+#face {
+  display: flex;
+  border: 20px solid rgb(250, 250, 205);
+}
+
+#lipstick {
+  display: flex;
+  border: 20px solid rgb(240, 168, 152);
 }
 
 .product {
@@ -152,23 +155,37 @@
 .prdimg {
 width: 150px;
 height: auto;
+padding-top: 20px;
 }
 
 .prdname {
 display: inline-block;
 text-align: center;
-margin-bottom: 0;;
+margin-bottom: 0;
+font-size: 15px;
 }
 
 .prdprice {
   display: inline-block;
   margin-top: 0;
+  font-size: 15px;
+}
+
+#quote {
+  display: flex;
+  margin-top: 35px;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 #topBtn {
   display: none;
   position: fixed;
-  bottom: 65px;
+  bottom: 82px;
   right: 0;
   z-index: 80;
   font-size: 18px;
@@ -183,10 +200,20 @@ margin-bottom: 0;;
   background-color: rgb(194, 192, 192);
 }
 
+.contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  margin-right: 25px;
+  font-size: 18px;
+}
+
 #footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 5rem;     
+  height: 4rem;     
   background: rgb(173, 169, 245);  
 }
