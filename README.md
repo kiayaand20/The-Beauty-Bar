@@ -35,8 +35,8 @@ https://whimsical.com/the-beauty-bar-2VAFaWx2L2dGPiyvT2nN9V
 |  Day | Deliverable | Status
 |---|---| ---|
 |Nov 5| API Selection/Wireframes/Timeframes/Priority Matrix| Complete
-|Nov 8| Core Application Structure - Javascript, HTML, CSS | Incomplete
-|Nov 9| Application Structure/Coding | Incomplete
+|Nov 8| Core Application Structure - Javascript, HTML, CSS | Complete
+|Nov 9| Application Structure/Coding | Complete
 |Nov 10| Coding/MVP Work | Incomplete
 |Nov 11| MVP completion/Styling/CSS| Incomplete
 |Nov 12| Styling and CSS | Incomplete

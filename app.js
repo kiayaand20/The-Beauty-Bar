@@ -80,6 +80,18 @@ const ingredientsList =
     "purpicks",
     "silicone free",
     "water free"]
+// const productType = [
+//   "blush",
+//   "bronzer",
+//   "eyebrow",
+//   "eyeliner",
+//   "eyeshadow",
+//   "foundation",
+//   "lip liner",
+//   "lipstick",
+//   "mascara",
+//   "nail polish"
+// ]
 
 let productDiv = document.querySelector("#product-name")
 
@@ -128,7 +140,7 @@ priceSelector.addEventListener("change", searchPriceData)
 
 async function searchIngredientData(e) {
   let ingredientsPreference = e.target.value;
-  const url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_tags${ingredientsPreference}`;
+  const url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_tags=${ingredientsPreference}`;
   try {
     const res = await axios.get(url);
     const productData = res.data;
@@ -152,6 +164,33 @@ function showIngredientData() {
 }
 showIngredientData();
 
+async function searchProductData(e) {
+  let product_type = e.target.value;
+  const url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${product_type}`;
+  try {
+    const res = await axios.get(url);
+    const productData = res.data;
+    console.log(productData);
+    displayProducts(productData);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+const selector = document.querySelector("#product-type")
+selector.addEventListener("change", searchProductData)
+
+// function showProductData() {
+//   for (let i = 0; i < productType.length; i++) {
+//     let option = document.createElement(`option`);
+//     option.value = productType[i];
+//     option.textContent = productType[i];
+//     tagSelector.appendChild(option)
+//   }
+// }
+// showProductData();
+
+
 function displayProducts(products) {
   products.forEach(product => {
     let div = document.createElement("div");
@@ -165,12 +204,14 @@ function displayProducts(products) {
     console.log(product.api_featured_image)
 
     let productName = document.createElement("h4")
+    productName.classList.add("prdname");
     productName.innerText = product.name;
     div.appendChild(productName);
     productDiv.appendChild(div);
     console.log(product.name);
 
     let productPrice = document.createElement("h4")
+    productPrice.classList.add("prdprice");
     productPrice.innerText = product.price;
     div.appendChild(productPrice);
     productDiv.appendChild(div);
