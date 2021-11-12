@@ -167,8 +167,8 @@ function showIngredientData() {
 showIngredientData();
 
 async function searchProductData(e) {
-  let product_type = e.target.value;
-  const url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${product_type}`;
+  let productType = e.target.value;
+  const url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${productType}`;
   try {
     const res = await axios.get(url);
     const productData = res.data;
