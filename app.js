@@ -82,18 +82,18 @@ const ingredientsList =
     "Silicone free",
     "Water-free"]
 
-// const productType = [
-//   "blush",
-//   "bronzer",
-//   "eyebrow",
-//   "eyeliner",
-//   "eyeshadow",
-//   "foundation",
-//   "lip liner",
-//   "lipstick",
-//   "mascara",
-//   "nail polish"
-// ]
+const productType = [
+  "Blush",
+  "Bronzer",
+  "Eyebrow",
+  "Eyeliner",
+  "Eyeshadow",
+  "Foundation",
+  "Lip liner",
+  "Lipstick",
+  "Mascara",
+  "Nail polish"
+]
 
 let productDiv = document.querySelector("#product-name")
 
@@ -113,6 +113,7 @@ async function searchBrandData(e) {
 
 const brandSelector = document.querySelector("#brand-name")
 brandSelector.addEventListener("change", searchBrandData)
+
 
 function showBrandData() {
   for (let i = 0; i < brands.length; i++) {
@@ -182,15 +183,15 @@ async function searchProductData(e) {
 const selector = document.querySelector("#product-type")
 selector.addEventListener("change", searchProductData)
 
-// function showProductData() {
-//   for (let i = 0; i < productType.length; i++) {
-//     let option = document.createElement(`option`);
-//     option.value = productType[i];
-//     option.textContent = productType[i];
-//     tagSelector.appendChild(option)
-//   }
-// }
-// showProductData();
+function showProductType() {
+  for (let i = 0; i < productType.length; i++) {
+    let option = document.createElement(`option`);
+    option.value = productType[i];
+    option.textContent = productType[i];
+    selector.appendChild(option)
+  }
+}
+showProductType();
 
 
 function displayProducts(products) {
@@ -236,3 +237,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+

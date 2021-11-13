@@ -16,84 +16,88 @@
 </head>
 
 <body class="body">
-  <div id="content-wrap">
-
-    <header class="header">
-      <h1>THE BEAUTY BAR</h1>
-    </header>
-
-    <nav>
-      <div class="navbar">
-        <h3 id="category">Search by Category:</h3>
-        <form>
-          <select id="brand-name">
-            <option value="Search by Brand" selected disable hidden>Brand</option>
-          </select>
-        </form>
-
-        <form>
-          <select id="price">
-            <option value="Search by Price" selected disable hidden>Price</option>
-            <option value="15">Less than $15</option>
-            <option value="25">Less than $25</option>
-            <option value="50">Less than $50</option>
-            <option value="100">Less than $100</option>
-          </select>
-        </form>
-
-        <form>
-          <select id="tags">
-            <option value="Search by Tags" selected disable hidden>Ingredients Preference</option>
-          </select>
-        </form>
-
-        <form>
-          <select id="product-type">
-            <option value="Search by Product Type" selected disable hidden>Product Type</option>
-          </select>
-        </form>
-
-      </div>
-    </nav>
-
-    <h2 id="quote">“The most beautiful makeup for a woman is passion. But cosmetics are easier to buy.” –
+  <header class="header">
+    <a href="index.html" style="text-decoration:none">
+      <h1 id="title">THE BEAUTY BAR</h1>
+    </a>
+    <h3 id="quote">“The most beautiful makeup for a woman is passion. But cosmetics are easier to buy.” –
       Yves
       Saint Laurent 💋
-    </h2>
+    </h3>
+  </header>
 
-    <div>
-      <section>
-        <div class="descriptors">
-          <h3 id="desc1">STYLE</h3>
-          <h3 id="desc2">DESIGN</h3>
-          <h3 id="desc3">CREATIVITY</h3>
-          <h3 id="desc4">ARTISTRY</h3>
-        </div>
+  <nav>
+    <div class="navbar">
+      <h3 id="category">Search by Category:</h3>
 
-        <div class="header_images">
-          <img src="https://cdn.pixabay.com/photo/2016/10/25/12/53/makeup-brush-1768790__480.jpg" alt="makeup brushes"
-            id="brushes" style="width: 20%">
-          <img src="https://cdn.pixabay.com/photo/2019/10/18/07/28/eye-shadow-4558443__340.jpg" alt="sample colors"
-            id="palette" style="width: 20%">
-          <img src="https://cdn.pixabay.com/photo/2017/11/29/09/15/paint-2985569__340.jpg" alt="face" id="face"
-            style="width: 20%">
-          <img src="https://cdn.pixabay.com/photo/2021/01/06/07/52/lipsticks-5893481__340.jpg" alt="lipstick"
-            id="lipstick" style="width: 20%">
-        </div>
-      </section>
+      <form>
+        <select id="product-type">
+          <option value="Search by Product Type" selected disable hidden>Product Type</option>
+        </select>
+      </form>
+
+      <form>
+        <select id="brand-name">
+          <option value="Search by Brand" selected disable hidden>Brand</option>
+        </select>
+      </form>
+
+      <form>
+        <select id="price">
+          <option value="Search by Price" selected disable hidden>Price</option>
+          <option value="15">Less than $15</option>
+          <option value="25">Less than $25</option>
+          <option value="50">Less than $50</option>
+          <option value="100">Less than $100</option>
+        </select>
+      </form>
+
+      <form>
+        <select id="tags">
+          <option value="Search by Tags" selected disable hidden>Ingredients Preference</option>
+        </select>
+      </form>
+
     </div>
+  </nav>
 
-    <div id="product-name"></div>
+  <!-- <h2 id="quote">“The most beautiful makeup for a woman is passion. But cosmetics are easier to buy.” –
+    Yves
+    Saint Laurent 💋
+  </h2> -->
 
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
+  <div>
+    <section>
+      <!-- <div class="descriptors">
+        <h3 id="desc1">STYLE</h3>
+        <h3 id="desc2">DESIGN</h3>
+        <h3 id="desc3">CREATIVITY</h3>
+        <h3 id="desc4">ARTISTRY</h3>
+      </div> -->
+
+      <div class="header_images">
+        <img src="https://cdn.pixabay.com/photo/2016/10/25/12/53/makeup-brush-1768790__480.jpg" alt="makeup brushes"
+          id="brushes" style="width: 20%">
+        <img src="https://cdn.pixabay.com/photo/2019/10/18/07/28/eye-shadow-4558443__340.jpg" alt="sample colors"
+          id="palette" style="width: 20%">
+        <img src="https://cdn.pixabay.com/photo/2017/11/29/09/15/paint-2985569__340.jpg" alt="face" id="face"
+          style="width: 20%">
+        <img src="https://cdn.pixabay.com/photo/2021/01/06/07/52/lipsticks-5893481__340.jpg" alt="lipstick"
+          id="lipstick" style="width: 20%">
+      </div>
+    </section>
+  </div>
+
+
+  <div id="product-name"></div>
+
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Back to Top</button>
 
   </div>
 </body>
 
-<footer id="footer">
-  <div class="contact">
-    <h3>Contact Us</h3>
-  </div>
+<footer class="footer">
+  <h4 id="copy">&copy; Kiaya Anderson | 2021</h4>
 </footer>
 
 </html>

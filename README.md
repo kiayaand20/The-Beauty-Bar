@@ -25,12 +25,14 @@ https://res.cloudinary.com/kacloud20/image/upload/v1636729911/beauty_bar_wirefra
 
 ## MVP & Post-MVP
 ### MVP 
-- Utilize API to retrieve product data using an Axios GET request.
-- Create option lists for users to search for products and receive results.
+- Utilize external API that returns makeup/beauty data using an Axios GET request.
+- Create option lists for users to search for products by category and receive results.
+- Add page refresh properties to the title of the application.
 - Apply Flexbox for styling and formatting of application.
 
 ### PostMVP  
-- Utilize additional API 
+- Create a "Back to Top" button for page scrolling.
+- Utilize another API to add more features to the application.
 - Create data form for users to submit an inquiry.
 
 ## Project Schedule
@@ -38,10 +40,10 @@ https://res.cloudinary.com/kacloud20/image/upload/v1636729911/beauty_bar_wirefra
 |---|---| ---|
 |Nov 5| API Selection/Wireframes/Timeframes/Priority Matrix| Complete
 |Nov 8| Core Application Structure - Javascript, HTML, CSS | Complete
-|Nov 9| Code| Complete
-|Nov 10| Code/MVP work | Complete
+|Nov 9| Coding| Complete
+|Nov 10| Coding/MVP work | Complete
 |Nov 11| MVP|Complete
-|Nov 12| Styling and CSS | Incomplete
+|Nov 12| Styling/CSS/PostMVP | Incomplete
 |Nov 13| Final Application Review| Incomplete
 |Nov 15| Presentation | Incomplete
 

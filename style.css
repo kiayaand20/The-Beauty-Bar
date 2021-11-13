@@ -2,22 +2,38 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  position: relative;
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    
+  /* padding-bottom: 2.5rem;     */
+  flex: 1 1 auto;
 }
 
 .header {
-  display: block; 
+  border-width: 5px;  
+  border-style: dotted solid;
+} 
+
+#title {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 35px; 
+  font-size: 35px;
+  font-weight: bold;
+  display: flex; 
+  justify-content: center;
   margin: 0 auto;
   width: 100%; 
-  text-align: center;
+}
+
+#quote {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
   font-family: 'Playfair Display', serif;
-  letter-spacing: 20px;
-  font-size: 20px;
-  border-width: 3px;  
-  border-style: dotted solid;
 }
 
 .navbar {
@@ -33,7 +49,7 @@
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-size: 20px;
-}
+} 
 
 #brand-name {
   width: 190px;
@@ -65,7 +81,6 @@
   font-size: 15px;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  margin-left: 10px;
 }
 
 #product-name {
@@ -123,6 +138,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: flex-start;
+  width: 100%;
+  height: auto;
 }
 #brushes {
   display: flex;
@@ -144,15 +161,20 @@
   border: 20px solid rgb(240, 168, 152);
 }
 
+#product-name {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
 .product {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  margin-left: 35%;
-  margin-right: 35%;
-  border: 4px solid black;
+  border: 3px solid rgb(173, 169, 245);
+  width: 22%;
 }
 
 .prdimg {
@@ -162,7 +184,9 @@ padding-top: 20px;
 }
 
 .prdname {
-display: inline-block;
+display: flex;
+flex-direction: column;
+font-family: 'Playfair Display', serif;
 text-align: center;
 margin-bottom: 0;
 font-size: 15px;
@@ -170,19 +194,9 @@ font-size: 15px;
 
 .prdprice {
   display: inline-block;
+  font-family: 'Playfair Display', serif;
   margin-top: 0;
   font-size: 15px;
-}
-
-#quote {
-  display: flex;
-  margin-top: 35px;
-  font-size: 25px;
-  font-weight: bold;
-  font-style: italic;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Cormorant Garamond', serif;
 }
 
 #topBtn {
@@ -203,20 +217,19 @@ font-size: 15px;
   background-color: rgb(194, 192, 192);
 }
 
-.contact {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  margin-right: 25px;
-  font-size: 18px;
-}
-
-#footer {
-  position: fixed;
+.footer {
+  text-align: center;
+  position: absolute;
+  left: 0;
   bottom: 0;
   width: 100%;
-  height: 4rem;     
   background: rgb(173, 169, 245);  
 }
+
+#copy {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-weight: bold;
+}
+
