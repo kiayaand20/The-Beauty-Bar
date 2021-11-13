@@ -95,7 +95,7 @@ const productType = [
   "Nail polish"
 ]
 
-let productDiv = document.querySelector("#product-name")
+let productDiv = document.querySelector("#beauty-product")
 
 async function searchBrandData(e) {
   productDiv.innerHTML = ""

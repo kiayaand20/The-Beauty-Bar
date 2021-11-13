@@ -43,8 +43,8 @@ https://res.cloudinary.com/kacloud20/image/upload/v1636729911/beauty_bar_wirefra
 |Nov 9| Coding| Complete
 |Nov 10| Coding/MVP work | Complete
 |Nov 11| MVP|Complete
-|Nov 12| Styling/CSS/PostMVP | Incomplete
-|Nov 13| Final Application Review| Incomplete
+|Nov 12| Styling/CSS/PostMVP | Complete
+|Nov 13| Final Application Review| Complete
 |Nov 15| Presentation | Incomplete
 
 ## Priority Matrix
@@ -55,23 +55,38 @@ https://res.cloudinary.com/kacloud20/image/upload/v1636730560/priority_matrix_bl
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 |Working with APIs| H | 4hrs| 4hrs |   4hrs |
-|Javascript Framework | H | 4hrs| hrs | hrs |
-|Establishing HTML| H|4hrs| 3hrs|3hrs
-|Flexbox| M|3hrs| hrs|hrs
-|Styling| M|4hrs| hrs|hrs
-|CSS Formatting| H|4hrs| 4hrs|4hrs
+|Javascript Framework | H | 4hrs| 6hrs | 6hrs |
+|Establishing HTML| H|4hrs| 4.5hrs|4.5hrs|
+|Working with Images|M|2hrs|3hrs|3hrs|
+|Flexbox| M|3hrs| 4hrs|4hrs
+|Navbar Styling| M|1.5hrs| 2.5hrs|2.5hrs
+|CSS Formatting| H|4hrs| 5hrs|5hrs
 |Debugging| H|4hrs| 3hrs|3hrs
-|Code Review/Cleaning| H|4hrs| 3hrs|3hrs
+|Pseudocode| H|4hrs| 3hrs|3hrs
 |Application Testing| H|4hrs| 3hrs|3hrs
-| Total | H | 35hrs| hrs | hrs |
+| Total | H | 35hrs| 38hrs | 38hrs |
 
 ## Code Snippet
-Description -
+Description - This snippet of code allows users to scroll back to the top of the application after viewing product results.
 
 See code snippet below:
 
 ```
+let topbutton = document.getElementById("topBtn");
+window.onscroll = function () { scrollFunction() };
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topbutton.style.display = "block";
+  } else {
+    topbutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 ```
 
 ## Change Log
