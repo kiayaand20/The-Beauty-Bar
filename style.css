@@ -44,6 +44,7 @@
   background-color: rgb(173, 169, 245);
   height: 4rem; 
 }
+
 #category {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
@@ -100,20 +101,12 @@
   display: flex;
   padding: 10px;
   justify-content: space-around;
-  width: 100%;
 }
 #brushes {
   display: flex;
   align-content: flex-end;
   padding: 10px;
   border: 20px solid rgb(234, 220, 250);
-}
-
-#palette {
-  display: flex;
-  align-content: flex-end;
- padding: 10px;
- border: 20px solid rgb(205, 250, 229); 
 }
 
 #face {
@@ -127,7 +120,7 @@
   display: flex;
   align-content: flex-end;
   padding: 10px;
-  border: 20px solid rgb(240, 168, 152);
+  border: 20px solid rgb(236, 159, 154);
 }
 
 #beauty-product {
@@ -186,19 +179,63 @@ font-size: 15px;
   background-color: rgb(194, 192, 192);
 }
 
-.footer {
+#copy {
   text-align: center;
-  position: absolute;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.footer {
   bottom: 0;
   width: 100%;
   background: rgb(173, 169, 245);  
 }
 
-#copy {
-  text-align: center;
+.connect {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  align-items: flex-end;
   font-family: 'Playfair Display', serif;
-  text-align: center;
   font-weight: bold;
-  margin-bottom: 40px;
+  text-decoration: underline; 
 }
 
+.icons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  height: 40px;
+  padding: 10px;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) {
+    #title {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 15px; 
+      font-size: 30px;
+      text-align: center;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+    .header_images {
+      flex-direction: column;
+    }
+    #beauty-product {
+      flex-direction: column;
+      align-items: center;
+    }
+    .product {
+      border: none;
+  }
+}

@@ -33,7 +33,6 @@ https://res.cloudinary.com/kacloud20/image/upload/v1636729911/beauty_bar_wirefra
 ### PostMVP  
 - Create a "Back to Top" button for page scrolling.
 - Utilize another API to add more features to the application.
-- Create data form for users to submit an inquiry.
 
 ## Project Schedule
 |  Day | Deliverable | Status
