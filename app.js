@@ -1,3 +1,4 @@
+// Brand names retrieved from API
 const brands = [
   "Almay",
   "Alva",
@@ -57,6 +58,7 @@ const brands = [
   "Zorah",
   "Zorah biocosmetiques"]
 
+// Tags/Ingredients List retrieved from API
 const ingredientsList =
   ["Canadian",
     "CertClean",
@@ -82,6 +84,7 @@ const ingredientsList =
     "Silicone free",
     "Water-free"]
 
+// Porduct Type data retrieved from API
 const productType = [
   "Blush",
   "Bronzer",
@@ -97,6 +100,7 @@ const productType = [
 
 let productDiv = document.querySelector("#beauty-product")
 
+// Product Brand Name data from API
 async function searchBrandData(e) {
   productDiv.innerHTML = ""
   let brand = e.target.value;
@@ -110,7 +114,7 @@ async function searchBrandData(e) {
     console.log(error);
   }
 }
-
+// Event listener for brand name in navbar
 const brandSelector = document.querySelector("#brand-name")
 brandSelector.addEventListener("change", searchBrandData)
 
@@ -125,6 +129,7 @@ function showBrandData() {
 }
 showBrandData();
 
+//Price data from API
 async function searchPriceData(e) {
   let price = e.target.value;
   const url = `http://makeup-api.herokuapp.com/api/v1/products.json?price_less_than=${price}`;
@@ -137,10 +142,11 @@ async function searchPriceData(e) {
     console.log(error);
   }
 }
-
+// Event listener for price in navbar
 const priceSelector = document.querySelector("#price")
 priceSelector.addEventListener("change", searchPriceData)
 
+// Tags/Ingredients List data from API
 async function searchIngredientData(e) {
   let ingredientsPreference = e.target.value;
   const url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_tags=${ingredientsPreference}`;
@@ -153,7 +159,7 @@ async function searchIngredientData(e) {
     console.log(error);
   }
 }
-
+// Event listener for ingredients list in navbar
 const tagSelector = document.querySelector("#tags")
 tagSelector.addEventListener("change", searchIngredientData)
 
@@ -167,6 +173,7 @@ function showIngredientData() {
 }
 showIngredientData();
 
+//Product Type date from API
 async function searchProductData(e) {
   let productType = e.target.value;
   const url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${productType}`;
@@ -180,6 +187,7 @@ async function searchProductData(e) {
   }
 }
 
+// Event listener for poduct type in navbar
 const selector = document.querySelector("#product-type")
 selector.addEventListener("change", searchProductData)
 
@@ -193,7 +201,7 @@ function showProductType() {
 }
 showProductType();
 
-
+// Code that shows what product info is displayed from API - image, name, price
 function displayProducts(products) {
   products.forEach(product => {
     let div = document.createElement("div");
@@ -222,6 +230,7 @@ function displayProducts(products) {
   })
 }
 
+// Back to Top Button
 let topbutton = document.getElementById("topBtn");
 window.onscroll = function () { scrollFunction() };
 

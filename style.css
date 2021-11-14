@@ -1,3 +1,4 @@
+/* styling for enitre document */
 .body {
   display: flex;
   min-height: 100vh;
@@ -5,15 +6,18 @@
   position: relative;
 }
 
+/* styling for main content */
 #content-wrap {
   flex: 1 1 auto;
 }
 
+/* Border around application name */
 .header {
   border-width: 5px;  
   border-style: dotted solid;
 } 
 
+/* Application Name - The Beauty Bar */
 #title {
   font-family: 'Playfair Display', serif;
   letter-spacing: 35px; 
@@ -25,6 +29,7 @@
   width: 100%; 
 }
 
+/* Application Quote - located on bottom of page */
 #quote {
   display: flex;
   font-size: 15px;
@@ -35,6 +40,7 @@
   font-family: 'Playfair Display', serif;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -45,12 +51,14 @@
   height: 4rem; 
 }
 
+/* Navbar Text - category */
 #category {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   font-size: 20px;
 } 
 
+/* Navbar category - brand name*/
 #brand-name {
   width: 190px;
   font-weight: bold;
@@ -59,6 +67,7 @@
   text-align: center;
 }
 
+/* Navbar category - price */
 #price {
   width: 190px;
   font-size: 15px;
@@ -67,6 +76,7 @@
   font-weight: bold;
 }
 
+/* Navbar category - product type */
 #product-type {
   font-weight: bold;
   width: 190px;
@@ -75,6 +85,7 @@
   text-align: center;
 }
 
+/* Navbar category - ingredients list */
 #tags {
   font-weight: bold;
   width: 190px;
@@ -83,6 +94,7 @@
   text-align: center;
 }
 
+/* main page title display - bE */
 #body-title {
   font-size: 25px;
   font-family: 'Shadows Into Light', cursive;
@@ -91,17 +103,22 @@
   letter-spacing: 5px;
 }
 
+/* Descriptors regarding price, brands, etc. 
+located underneath title */
 .body-descriptions {
   font-size: 18px;
   font-family: 'Playfair Display', serif;
   text-align: center;
 }
 
+/* Images displayed on page */
 .header_images {
   display: flex;
   padding: 10px;
   justify-content: space-around;
 }
+
+/* makeup brushes image */
 #brushes {
   display: flex;
   align-content: flex-end;
@@ -109,6 +126,7 @@
   border: 20px solid rgb(234, 220, 250);
 }
 
+/* creative face image */
 #face {
   display: flex;
   align-content: flex-end;
@@ -116,6 +134,7 @@
   border: 20px solid rgb(250, 250, 205);
 }
 
+/* lip image */
 #lipstick {
   display: flex;
   align-content: flex-end;
@@ -123,6 +142,7 @@
   border: 20px solid rgb(236, 159, 154);
 }
 
+ /* Product Display - Image, Name, & Price */
 #beauty-product {
 display: flex;
 flex-wrap: wrap;
@@ -161,6 +181,7 @@ font-size: 15px;
   font-size: 15px;
 }
 
+/* Back to Top Button */
 #topBtn {
   display: none;
   position: fixed;
@@ -179,20 +200,7 @@ font-size: 15px;
   background-color: rgb(194, 192, 192);
 }
 
-#copy {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  text-align: left;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-.footer {
-  bottom: 0;
-  width: 100%;
-  background: rgb(173, 169, 245);  
-}
-
+/* Connect Links - LinkedIn and GitHub */
 .connect {
   display: flex;
   align-items: left;
@@ -212,8 +220,23 @@ font-size: 15px;
   padding: 10px;
 }
 
+/* Footer */
+.footer {
+  bottom: 0;
+  width: 100%;
+  background: rgb(173, 169, 245);  
+}
+#copy {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Media Queries for Responsive Design */
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 320px) 
   and (max-device-width: 812px) {
     #title {
       font-family: 'Playfair Display', serif;
@@ -225,8 +248,8 @@ font-size: 15px;
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
-      align-content: center;
       align-items: center;
+      height: auto;
     }
     .header_images {
       flex-direction: column;
@@ -239,3 +262,12 @@ font-size: 15px;
       border: none;
   }
 }
+
+@media only screen 
+  and (min-device-width: 540px) 
+  and (max-device-width: 1024px) {
+    .header_images {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
