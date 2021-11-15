@@ -59,11 +59,12 @@ https://res.cloudinary.com/kacloud20/image/upload/v1636730560/priority_matrix_bl
 |Working with Images|M|2hrs|3hrs|3hrs|
 |Flexbox| M|3hrs| 4hrs|4hrs
 |Navbar Styling| M|1.5hrs| 2.5hrs|2.5hrs
+|Media Queries| M|1hr|1.5hrs|1.5hrs|
 |CSS Formatting| H|4hrs| 5hrs|5hrs
 |Debugging| H|4hrs| 4.5hrs|4.5hrs
 |Pseudocode| H|4hrs| 3hrs|3hrs
 |Application Testing| H|4hrs| 3hrs|3hrs
-| Total | H | 35hrs| 40hrs | 40hrs |
+| Total | H | 35hrs| 41.5hrs | 41.5hrs |
 
 ## Code Snippet
 Description - This snippet of code allows users to scroll back to the top of the application after viewing product results.
