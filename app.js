@@ -176,7 +176,7 @@ showIngredientData();
 //Product Type date from API
 async function searchProductData(e) {
   let productType = e.target.value;
-  const url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${productType}`;
+  const url = `https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${productType}`;
   try {
     const res = await axios.get(url);
     const productData = res.data;
