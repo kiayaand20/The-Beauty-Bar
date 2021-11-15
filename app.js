@@ -84,7 +84,7 @@ const ingredientsList =
     "Silicone free",
     "Water-free"]
 
-// Porduct Type data retrieved from API
+// Product Type data retrieved from API
 const productType = [
   "Blush",
   "Bronzer",
