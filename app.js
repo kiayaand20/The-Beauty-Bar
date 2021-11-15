@@ -104,7 +104,7 @@ let productDiv = document.querySelector("#beauty-product")
 async function searchBrandData(e) {
   productDiv.innerHTML = ""
   let brand = e.target.value;
-  const url = `http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`;
+  const url = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`;
   try {
     const res = await axios.get(url);
     const productData = res.data;
@@ -132,7 +132,7 @@ showBrandData();
 //Price data from API
 async function searchPriceData(e) {
   let price = e.target.value;
-  const url = `http://makeup-api.herokuapp.com/api/v1/products.json?price_less_than=${price}`;
+  const url = `https://makeup-api.herokuapp.com/api/v1/products.json?price_less_than=${price}`;
   try {
     const res = await axios.get(url);
     const productData = res.data;
@@ -149,7 +149,7 @@ priceSelector.addEventListener("change", searchPriceData)
 // Tags/Ingredients List data from API
 async function searchIngredientData(e) {
   let ingredientsPreference = e.target.value;
-  const url = `http://makeup-api.herokuapp.com/api/v1/products.json?product_tags=${ingredientsPreference}`;
+  const url = `https://makeup-api.herokuapp.com/api/v1/products.json?product_tags=${ingredientsPreference}`;
   try {
     const res = await axios.get(url);
     const productData = res.data;
