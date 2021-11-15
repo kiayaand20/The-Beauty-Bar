@@ -2,6 +2,7 @@
 
 ## Project Name
 The Beauty Bar
+#[The-Beauty-Bar](https://kiayaand20.github.io/The-Beauty-Bar/)
 
 ## Project Description
 Basic application that will provide users with the ability to search for a variety of beauty products.
