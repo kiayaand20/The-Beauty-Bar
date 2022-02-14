@@ -3,7 +3,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  position: relative;
+  clear: both;
 }
 
 /* styling for main content */
@@ -27,8 +27,14 @@
   justify-content: center;
   margin: 0 auto;
   width: 100%;
+  color: black;
 }
 
+#title:hover {
+  color: rgb(173, 169, 245);
+}
+
+/* Application Name - The Beauty Bar */
 .header_images {
   display: flex;
   flex-direction: row;
@@ -213,8 +219,8 @@
 
 /* Connect Links - LinkedIn and GitHub */
 .connect-container {
-  padding-top: 100px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .connect {
