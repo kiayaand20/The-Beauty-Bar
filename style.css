@@ -103,13 +103,13 @@
   letter-spacing: 5px;
 }
 
-/* Descriptors regarding price, brands, etc. 
-located underneath title */
+/* Descriptors regarding price, brands, etc.  
+/* located underneath title */
 .body-descriptions {
   font-size: 18px;
   font-family: 'Playfair Display', serif;
   text-align: center;
-}
+} */
 
 /* Images displayed on page */
 .header_images {
@@ -134,7 +134,7 @@ located underneath title */
   border: 20px solid rgb(250, 250, 205);
 }
 
-/* lip image */
+/* lipstick image */
 #lipstick {
   display: flex;
   align-content: flex-end;
@@ -271,3 +271,5 @@ font-size: 15px;
       align-items: center;
     }
   }
+
+
