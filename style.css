@@ -13,31 +13,40 @@
 
 /* Border around application name */
 .header {
-  border-width: 5px;  
+  border-width: 5px;
   border-style: dotted solid;
-} 
+}
 
 /* Application Name - The Beauty Bar */
 #title {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 35px; 
-  font-size: 35px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 35px;
+  font-size: 50px;
   font-weight: bold;
-  display: flex; 
+  display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 100%; 
+  width: 100%;
+}
+
+.header_images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 20px;
 }
 
 /* Application Quote - located on bottom of page */
 #quote {
   display: flex;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   font-style: italic;
   justify-content: center;
   align-items: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
+  padding-top: 20px;
 }
 
 /* Navbar */
@@ -48,22 +57,22 @@
   overflow: hidden;
   border: 10px;
   background-color: rgb(173, 169, 245);
-  height: 4rem; 
+  height: 4rem;
 }
 
 /* Navbar Text - category */
 #category {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: bold;
   font-size: 20px;
-} 
+}
 
 /* Navbar category - brand name*/
 #brand-name {
   width: 190px;
   font-weight: bold;
   font-size: 15px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
 }
 
@@ -71,7 +80,7 @@
 #price {
   width: 190px;
   font-size: 15px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-weight: bold;
 }
@@ -81,7 +90,7 @@
   font-weight: bold;
   width: 190px;
   font-size: 15px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
 }
 
@@ -90,32 +99,34 @@
   font-weight: bold;
   width: 190px;
   font-size: 15px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
 }
 
 /* main page title display - bE */
 #body-title {
-  font-size: 25px;
-  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+  font-family: "Shadows Into Light", cursive;
   text-align: center;
   margin-bottom: 0;
   letter-spacing: 5px;
+  padding-top: 20px;
 }
 
 /* Descriptors regarding price, brands, etc.  
 /* located underneath title */
 .body-descriptions {
-  font-size: 18px;
-  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
   text-align: center;
-} */
+}
+*/
 
 /* Images displayed on page */
 .header_images {
   display: flex;
-  padding: 10px;
   justify-content: space-around;
+  padding-top: 20px;
 }
 
 /* makeup brushes image */
@@ -142,11 +153,11 @@
   border: 20px solid rgb(236, 159, 154);
 }
 
- /* Product Display - Image, Name, & Price */
+/* Product Display - Image, Name, & Price */
 #beauty-product {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .product {
@@ -160,23 +171,23 @@ justify-content: space-around;
 }
 
 .prdimg {
-width: 150px;
-height: auto;
-padding-top: 20px;
+  width: 150px;
+  height: auto;
+  padding-top: 20px;
 }
 
 .prdname {
-display: flex;
-flex-direction: column;
-font-family: 'Playfair Display', serif;
-text-align: center;
-margin-bottom: 0;
-font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 15px;
 }
 
 .prdprice {
   display: inline-block;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   margin-top: 0;
   font-size: 15px;
 }
@@ -201,14 +212,19 @@ font-size: 15px;
 }
 
 /* Connect Links - LinkedIn and GitHub */
+.connect-container {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
 .connect {
   display: flex;
   align-items: left;
   justify-content: center;
   align-items: flex-end;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: bold;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .icons {
@@ -222,54 +238,49 @@ font-size: 15px;
 
 /* Footer */
 .footer {
-  bottom: 0;
+  position: fixed;
   width: 100%;
-  background: rgb(173, 169, 245);  
+  bottom: 0;
+  background: rgb(173, 169, 245);
 }
 #copy {
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: left;
   font-weight: bold;
-  margin-bottom: 40px;
+  padding-left: 15px;
 }
 
 /* Media Queries for Responsive Design */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 812px) {
-    #title {
-      font-family: 'Playfair Display', serif;
-      letter-spacing: 15px; 
-      font-size: 30px;
-      text-align: center;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-    }
-    .header_images {
-      flex-direction: column;
-    }
-    #beauty-product {
-      flex-direction: column;
-      align-items: center;
-    }
-    .product {
-      border: none;
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  #title {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 15px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .header_images {
+    flex-direction: column;
+  }
+  #beauty-product {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product {
+    border: none;
   }
 }
 
-@media only screen 
-  and (min-device-width: 540px) 
-  and (max-device-width: 1024px) {
-    .header_images {
-      flex-direction: column;
-      align-items: center;
-    }
+@media only screen and (min-device-width: 540px) and (max-device-width: 1024px) {
+  .header_images {
+    flex-direction: column;
+    align-items: center;
   }
-
-
+}

@@ -16,13 +16,15 @@ Makeup API: http://makeup-api.herokuapp.com/api/v1/products.json
 
 ```
 [
-{
-"id": 1048,
-"brand": "colourpop",
-"name": "Lippie Pencil",
-"price": "5.0",
-"price_sign": "$",
-"currency": "CAD",
+  {
+    "id": 1048,
+    "brand": "colourpop",
+    "name": "Lippie Pencil",
+    "price": "5.0",
+    "price_sign": "$",
+    "currency": "CAD"
+  }
+]
 ```
 
 ## Wireframes
